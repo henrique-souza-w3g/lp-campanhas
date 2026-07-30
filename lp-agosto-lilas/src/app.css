@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #770d94;
+  padding: 1em
+}
+
+.header nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-header {
+  padding: 0.65em 1.6em;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font: 600 0.8rem/1 var(--sans);
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.btn-header:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #770d94;
+}
+
+.btn-header:active {
+  transform: translateY(1px);
+}
+
+.btn-header:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
