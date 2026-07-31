@@ -113,6 +113,7 @@
   background-image: url("/src/assets/flor_bg.svg");
   background-position: right;
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,6 +280,7 @@
   background-image: url("/src/assets/flor_bg.svg");
   background-position: right; /* espelhado, aparece à esquerda */
   background-repeat: no-repeat;
+  background-size: contain;
   transform: scaleX(-1);
 }
 
@@ -299,4 +301,25 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
+}
+
+.footer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 3em 1.5em;
+  text-align: center;
+}
+
+.footer-logo {
+  width: min(100%, 32em);
+  height: auto; /* preserva a proporção apesar do height no HTML */
+}
+
+.footer-copy {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--purple);
 }

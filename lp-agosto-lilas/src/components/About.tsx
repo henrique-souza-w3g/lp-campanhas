@@ -1,8 +1,7 @@
+import cartilha from "../assets/cartilha.pdf";
+
 export default function About() {
   const link = "";
-  function Download() {
-    return;
-  }
 
   return (
     <section className="about">
@@ -14,9 +13,13 @@ export default function About() {
         <a className="btn-why" href={link}>
           Peça Ajuda Aqui
         </a>
-        <button className="btn-why" onClick={Download}>
+        <a
+          className="btn-why"
+          href={cartilha}
+          download="Cartilha Agosto Lilas.pdf"
+        >
           Baixe Nossa Cartilha
-        </button>
+        </a>
       </div>
     </section>
   );
