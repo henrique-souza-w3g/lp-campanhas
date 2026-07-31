@@ -6,10 +6,16 @@
 
 .header {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   align-items: center;
   justify-content: center;
   padding: 1em;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.5em);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -58,8 +64,18 @@
     #f3f3f3,
     var(--light-purple)
   );
+  font-weight: 800;
 }
 
 .nav-golden-title {
   --grad: linear-gradient(to right, #fcff9e, #c67700);
+  font-weight: 800;
+}
+
+.welcome {
+  background-image: url("/src/assets/woman_flower.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
 }
