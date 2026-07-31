@@ -1,7 +1,7 @@
 import cartilha from "../assets/cartilha.pdf";
 
 export default function About() {
-  const link = "";
+  const link = "https://forms.gle/z2YcU1F3Ze6WoeTn9";
 
   return (
     <section className="about">

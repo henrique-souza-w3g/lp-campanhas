@@ -1,5 +1,5 @@
 export default function WeHelpYou() {
-  const link = "";
+  const link = "https://forms.gle/z2YcU1F3Ze6WoeTn9";
   return (
     <section className="why">
       <h2 className="why-title">Você Não Está Sozinha</h2>
