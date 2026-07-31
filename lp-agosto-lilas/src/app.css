@@ -78,4 +78,33 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  padding-left: 5em;
+  text-align: left;
+  align-content: center;
+}
+
+/* utilitário: empilha todos os filhos na mesma célula do grid */
+.stack {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+}
+
+.stack > * {
+  grid-area: 1 / 1;
+}
+
+.welcome-title {
+  font-size: 6em;
+  color: var(--purple);
+  line-height: 1;
+}
+
+.welcome-subtitle {
+  font-family: "Meow Script", sans-serif;
+  font-weight: 200;
+  font-size: 6em;
+  color: var(--light-purple);
+  line-height: 1;
+  transform: translate(0.8em, 0.4em);
 }
