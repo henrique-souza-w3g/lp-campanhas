@@ -108,3 +108,43 @@
   line-height: 1;
   transform: translate(0.8em, 0.4em);
 }
+
+.why {
+  background-image: url("/src/assets/flor_bg.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 2em;
+  margin: 0.5em 0;
+}
+
+.why-title {
+  font-family: "Nuosu SIL", sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+  color: var(--purple);
+}
+
+.why-subtitle {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.why-text {
+  width: 70%;
+  font-size: 1.2em;
+}
+
+.btn-why {
+  background-color: var(--dark-purple);
+  color: var(--purple);
+  border-radius: 0.5em;
+  padding: 0.3em 0.5em;
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+}
