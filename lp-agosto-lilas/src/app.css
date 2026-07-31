@@ -1,22 +1,26 @@
+:root {
+  --light-purple: #c9acf2;
+  --dark-purple: #342142;
+  --purple: #8b65bf;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #770d94;
-  padding: 1em
+  padding: 1em;
+  backdrop-filter: blur(10px);
 }
 
-.header nav {
+.nav {
   display: flex;
   gap: 0.75rem;
 }
 
 .btn-header {
   padding: 0.65em 1.6em;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 999px;
+  border: none;
   background: transparent;
-  color: #fff;
   font: 600 0.8rem/1 var(--sans);
   letter-spacing: 0.08em;
   cursor: pointer;
@@ -27,17 +31,35 @@
     transform 0.15s ease;
 }
 
-.btn-header:hover {
-  background: #fff;
-  border-color: #fff;
-  color: #770d94;
-}
-
-.btn-header:active {
-  transform: translateY(1px);
-}
-
 .btn-header:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 3px;
+}
+
+.gradient-text {
+  background-image: var(--grad);
+  background-size: 200% 100%;
+  background-position: 0% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: background-position 0.4s ease;
+}
+
+.gradient-text:hover {
+  background-position: 100% 0;
+}
+
+.nav-purple-title {
+  --grad: linear-gradient(
+    to right,
+    var(--purple),
+    #f3f3f3,
+    var(--light-purple)
+  );
+}
+
+.nav-golden-title {
+  --grad: linear-gradient(to right, #fcff9e, #c67700);
 }
