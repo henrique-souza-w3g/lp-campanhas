@@ -1,4 +1,5 @@
 import "./app.css";
+import About from "./components/About";
 import { Header } from "./components/Header";
 import TiposViolencia from "./components/TiposViolencia";
 import WeHelpYou from "./components/WeHelpYou";
@@ -12,6 +13,7 @@ export function App() {
         <Welcome />
         <WeHelpYou />
         <TiposViolencia/>
+        <About/>
       </main>
     </>
   );

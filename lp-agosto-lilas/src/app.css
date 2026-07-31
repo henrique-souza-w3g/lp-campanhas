@@ -140,13 +140,28 @@
 }
 
 .btn-why {
+  display: inline-block;
+  border: none;
   background-color: var(--dark-purple);
   color: var(--purple);
   border-radius: 0.5em;
   padding: 0.3em 0.5em;
+  font-family: inherit;
   font-size: 2em;
   font-weight: 700;
+  text-decoration: none;
   cursor: pointer;
+  box-shadow: 0.15em 0.2em 0.5em
+    color-mix(in srgb, var(--dark-purple) 35%, transparent);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.btn-why:hover {
+  transform: translateY(-2px);
+  box-shadow: 0.15em 0.35em 0.7em
+    color-mix(in srgb, var(--dark-purple) 45%, transparent);
 }
 
 .violence {
@@ -243,4 +258,35 @@
     align-items: flex-start;
     margin-left: 0;
   }
+}
+
+.about {
+  background-image: url("/src/assets/flor_bg.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+  margin: 3em 0;
+}
+
+.about-title {
+  font-family: "Nuosu SIL", sans-serif;
+  font-weight: 400;
+  font-size: 5em;
+  color: var(--purple);
+}
+
+.about-text {
+  width: 70%;
+  font-size: 1.2em;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }

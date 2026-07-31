@@ -1,6 +1,5 @@
-import Button from "./ui/Button";
-
 export default function WeHelpYou() {
+  const link = "";
   return (
     <section className="why">
       <h2 className="why-title">Você Não Está Sozinha</h2>
@@ -12,7 +11,9 @@ export default function WeHelpYou() {
         dados serão mantidos em segredo e apenas a Camila (Coordenadora de RH)
         terá acesso a sua resposta.
       </p>
-      <Button>Peça Ajuda Aqui!</Button>
+      <a className="btn-why" href={link}>
+        Peça Ajuda Aqui!
+      </a>
     </section>
   );
 }
