@@ -1,8 +1,7 @@
 import { motion } from "motion/react";
-import cartilha from "../assets/cartilha.pdf";
-import { botao, item, secao, VIEWPORT } from "../lib/animacoes";
+import { botao, item, secao, VIEWPORT } from "../../lib/animacoes";
 
-export default function About() {
+export default function AboutPurple() {
   return (
     <motion.section
       className="about"
@@ -21,7 +20,7 @@ export default function About() {
       <motion.div className="about-actions" variants={secao}>
         <motion.a
           className="btn-why"
-          href={cartilha}
+          href={"/src/assets/cartilha.pdf"}
           download="Cartilha Agosto Lilas.pdf"
           variants={item}
           {...botao}

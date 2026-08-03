@@ -17,8 +17,11 @@
   align-items: center;
   justify-content: center;
   padding: 1em;
+  /* o blur sozinho é invisível sobre cor lisa: a camada translúcida é o que
+     dá corpo ao vidro, o backdrop-filter só desfoca o que passa por trás */
+  background-color: color-mix(in srgb, var(--dark-purple) 30%, transparent);
   backdrop-filter: blur(0.5em);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.5em);
 }
 
 .nav {

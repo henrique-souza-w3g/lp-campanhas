@@ -1,22 +1,37 @@
 import { MotionConfig } from "motion/react";
 import "./app.css";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import { Header } from "./components/Header";
-import TiposViolencia from "./components/TiposViolencia";
-import Welcome from "./components/Welcome";
+import AboutPurple from "./components/purple/AboutPurple";
+import FooterPurple from "./components/purple/FooterPurple";
+import { HeaderPurple } from "./components/purple/HeaderPurple";
+import TiposViolenciaPurple from "./components/purple/TiposViolenciaPurple";
+import WelcomePurple from "./components/purple/WelcomePurple";
+import { useState } from "preact/hooks";
 
 export function App() {
-  // "user": quem pediu menos animação no sistema recebe só o fade, sem movimento
+  const [monthChoosed, setMonthChoosed] = useState<number>(0);
+
   return (
     <MotionConfig reducedMotion="user">
       <main className="container">
-        <Header />
-        <Welcome />
-        <TiposViolencia />
-        <About />
+        <HeaderPurple onEscolher={setMonthChoosed} />
+        {(() => {
+          switch (monthChoosed) {
+            case 0:
+              return (
+                <>
+                  <WelcomePurple />
+                  <TiposViolenciaPurple />
+                  <AboutPurple />
+                </>
+              );
+            case 1:
+              return <TiposViolenciaPurple />;
+            default:
+              return <WelcomePurple />;
+          }
+        })()}
       </main>
-      <Footer />
+      <FooterPurple />
     </MotionConfig>
   );
 }

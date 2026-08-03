@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import { botao, item, secao, VIEWPORT } from "../lib/animacoes";
+import { botao, item, secao, VIEWPORT } from "../../lib/animacoes";
 
-export default function WeHelpYou() {
+export default function WeHelpYouPurple() {
   const link = "https://forms.gle/z2YcU1F3Ze6WoeTn9";
 
   return (

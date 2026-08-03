@@ -1,6 +1,6 @@
 import type { Variants } from "motion/react";
 
-const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
+export const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 /** entra na tela quando 20% do bloco aparece, e só na primeira vez */
 export const VIEWPORT = { once: true, amount: 0.2 } as const;

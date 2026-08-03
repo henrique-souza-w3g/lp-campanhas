@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import { barra, item, secao, VIEWPORT } from "../lib/animacoes";
+import { barra, item, secao, VIEWPORT } from "../../lib/animacoes";
 
-export default function TiposViolencia() {
+export default function TiposViolenciaPurple() {
   const tiposViolencia = [
     {
       title: "Física",
