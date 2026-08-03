@@ -1,26 +1,34 @@
+import { motion } from "motion/react";
 import cartilha from "../assets/cartilha.pdf";
+import { botao, item, secao, VIEWPORT } from "../lib/animacoes";
 
 export default function About() {
-  const link = "https://forms.gle/z2YcU1F3Ze6WoeTn9";
-
   return (
-    <section className="about">
-      <h2 className="about-title">Se Informe Sobre!</h2>
-      <p className="about-text">
+    <motion.section
+      className="about"
+      variants={secao}
+      initial="escondido"
+      whileInView="visivel"
+      viewport={VIEWPORT}
+    >
+      <motion.h2 className="about-title" variants={item}>
+        Se Informe Sobre!
+      </motion.h2>
+      <motion.p className="about-text" variants={item}>
         Preparamos um material completo sobre Agosto Lilás!
-      </p>
-      <div className="about-actions">
-        <a className="btn-why" href={link}>
-          Peça Ajuda Aqui
-        </a>
-        <a
+      </motion.p>
+      {/* o wrapper não anima sozinho: só escalona os botões */}
+      <motion.div className="about-actions" variants={secao}>
+        <motion.a
           className="btn-why"
           href={cartilha}
           download="Cartilha Agosto Lilas.pdf"
+          variants={item}
+          {...botao}
         >
           Baixe Nossa Cartilha
-        </a>
-      </div>
-    </section>
+        </motion.a>
+      </motion.div>
+    </motion.section>
   );
 }
