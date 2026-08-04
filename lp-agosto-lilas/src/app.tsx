@@ -13,23 +13,9 @@ export function App() {
   return (
     <MotionConfig reducedMotion="user">
       <main className="container">
-        <HeaderPurple onEscolher={setMonthChoosed} />
-        {(() => {
-          switch (monthChoosed) {
-            case 0:
-              return (
-                <>
-                  <WelcomePurple />
-                  <TiposViolenciaPurple />
-                  <AboutPurple />
-                </>
-              );
-            case 1:
-              return <TiposViolenciaPurple />;
-            default:
-              return <WelcomePurple />;
-          }
-        })()}
+        <WelcomePurple />
+        <TiposViolenciaPurple />
+        <AboutPurple />
       </main>
       <FooterPurple />
     </MotionConfig>

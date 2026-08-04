@@ -12,7 +12,7 @@ export default function FooterPurple() {
     >
       <motion.img
         className="footer-logo"
-        src={"/src/assets//grupo_w3g_purple.png"}
+        src={"/src/assets/grupo_w3g_purple.png"}
         alt="Grupo W3G"
         width={700}
         height={200}
