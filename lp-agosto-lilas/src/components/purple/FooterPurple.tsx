@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { item, secao, VIEWPORT } from "../../lib/animacoes";
+import logoW3G from "../../assets/grupo_w3g_purple.png";
 
 export default function FooterPurple() {
   return (
@@ -12,7 +13,7 @@ export default function FooterPurple() {
     >
       <motion.img
         className="footer-logo"
-        src={"/src/assets/grupo_w3g_purple.png"}
+        src={logoW3G}
         alt="Grupo W3G"
         width={700}
         height={200}

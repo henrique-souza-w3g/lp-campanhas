@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { botao, item, secao, VIEWPORT } from "../../lib/animacoes";
+import cartilha from "../../assets/cartilha.pdf";
 
 export default function AboutPurple() {
   return (
@@ -20,7 +21,7 @@ export default function AboutPurple() {
       <motion.div className="about-actions" variants={secao}>
         <motion.a
           className="btn-why"
-          href={"/src/assets/cartilha.pdf"}
+          href={cartilha}
           download="Cartilha Agosto Lilas.pdf"
           variants={item}
           {...botao}
